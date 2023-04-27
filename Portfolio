@@ -1,23 +1,81 @@
 <!doctype HTML>
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initialiscale=1.0">
         <meta name="description" content"A record of all my coding projects">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Deondra Brown"
-        <title>Deondra Brown's Portfolio Website</title>
-        <link rel="stylesheet" media="screen" 
-        href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=c451b85cf126275a22cf7ca62ddacdc0">
+        <title>annaesmie.dev</title>
     </head>
+    
 <body>
-<h1><b>Welcome to my Portfolio</b></h1>
-<h2><strong>Enjoy your stay!!</strong></h2>
-<h3><b><u>ABOUT ME</u></b></h3>
-<p1>I'm a 19 year old Uni dropout and I stream on twitch ;)</p1>
-<ul><a href="https://beacons.ai/chocomxcha/">All My Links</a></ul>
-<ul><a href="https://twitch.tv/chocomxcha/">Twitch</a></ul>
-<ul><a href="https://twitter.com/choco_mxcha/">Twitter</a></ul>
-
+    
+    <header>
+        <div class="logo">
+            <img src="https://panels.twitch.tv/panel-505709597-image-821ab505-5503-4475-a000-f5c581e563a8" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Socials">My Socials</a></li>
+                <li><a href="#Projects">My Projects</a></li>
+                <li><a href="#Work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- INTRODUCTION -->
+    <section class="INTRODUCTION" id="Home">
+        <h1>Hi, I am <strong>Deondra Brown</strong></h1>
+        <p><mark>Full Stack Dev</mark></p>
+        <img src="https://pbs.twimg.com/profile_images/1648202715472834560/FYpQwwzI_400x400.jpg" alt="">
+        <p>I'm a 19 year old Uni dropout and I stream on twitch ;)</p>
+    </section>
+    
+    <!-- My Socials -->
+    <section class="My-Socials" ID="Socials">
+        <h2>My Socials</h2>
+        <div class="Socials">
+            <div class="link">
+                <h3></h3>
+                <ul>
+                    <li><p></p></li>
+                    <li><p></p></li>
+                </ul>
+            </div>
+            
+            <div class="link">
+                <h3></h3>
+                <ul>
+                    <li><p></p></li>
+                    <li><p></p></li>
+                </ul>
+            </div>
+            
+            <div class="link">
+                <h3></h3>
+                <ul>
+                    <li><p></p></li>
+                    <li><p></p></li>
+                </ul>
+            </div>
+        </div>
+            <ul>
+                <li><a href="https://beacons.ai/chocomxcha/">All My Links</a></li>
+                <li><a href="https://www.twitch.tv/chocomxcha/">Twitch</a></li>
+                <li><a href="https://twitter.com/choco_mxcha/">Twitter</a></li>
+                <li><a href="https://www.youtube.com/@chocomxcha/">YouTube</a></li>
+                <li><a href="https://www.instagram.com/choco.mxcha/">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@choco.mxcha/">TikTok</a></li>
+                <li><a href="https://www.pinterest.com/chocomxcha/">Pinterest</a></li>
+            </ul>
+    </section>
+    
+    <a href="Projects">My Projects</a>
 </body>
 </html>
