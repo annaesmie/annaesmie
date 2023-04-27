@@ -23,8 +23,10 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Socials">My Socials</a></li>
-                <li><a href="#Projects">My Projects</a></li>
                 <li><a href="#Work">My Work</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Projects">My Projects</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -34,11 +36,10 @@
         <h1>Hi, I am <strong>Deondra Brown</strong></h1>
         <p><mark>Full Stack Dev</mark></p>
         <img src="https://pbs.twimg.com/profile_images/1648202715472834560/FYpQwwzI_400x400.jpg" alt="">
-        <p>I'm a 19 year old Uni dropout and I stream on twitch ;)</p>
-    </section>
+        </section>
     
     <!-- My Socials -->
-    <section class="My-Socials" ID="Socials">
+    <section class="My-Socials" id="Socials">
         <h2>My Socials</h2>
         <div class="Socials">
             <h3><img src="https://images.prismic.io/sacra/616ba7e3-9369-41a4-81e3-43c49590b8ac_beacons_logo.png?auto=compress,format" alt="beacons"></h3>
@@ -76,8 +77,50 @@
                     <li><p><a href="https://www.pinterest.com/chocomxcha/">Pinterest</a></p></li>
             </div>
         </div>
+        
+        <a href="#Work" class="btn">My Work</a>
     </section>
     
-    <a href="Projects">My Projects</a>
+    <!-- About Me -->
+    <section class="About-Me" id="About">
+        <h2>Who I Am</h2>
+        <p>Designer and Developer based out Jamaiaca</p>
+        
+        <p>I am a 19 year old Uni drop out X2 and I stream on Twitch ;}</p>
+    </section>
+    
+    <!-- My Work -->
+    <section class="My-Work" id="Work">
+        <h2>My Work</h2>
+        <p></p>
+        
+        <div class="portfolio">
+            <a href="#" class="">
+                <img src="#" alt="mocha-swirl-panel" class="work image"> 
+            </a>
+            
+            <a href="#" class="">
+                <img src="#" alt="pastel-cloud-panel" class="work image"> 
+            </a>
+            
+            <a href="#" class="">
+                <img src="#" alt="strawberry-lemonade-panel" class="work image"> 
+            </a>
+            
+            <a href="#" class="">
+                <img src="#" alt="pastel-cloud-overlay" class="work image"> 
+            </a>
+            
+            <a href="#" class="">
+                <img src="#" alt="strawberry-lemonade-overlay" class="work image"> 
+            </a>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+        <a href="mailto:choco.mxcha@gmail.com">choco.mxcha@gmail.comm</a>
+    </footer>
+    
 </body>
 </html>
