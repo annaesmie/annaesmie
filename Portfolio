@@ -41,39 +41,41 @@
     <section class="My-Socials" ID="Socials">
         <h2>My Socials</h2>
         <div class="Socials">
+            <h3><img src="https://images.prismic.io/sacra/616ba7e3-9369-41a4-81e3-43c49590b8ac_beacons_logo.png?auto=compress,format" alt="beacons"></h3>
+            <a href="https://beacons.ai/chocomxcha/">All My Links</a>
             <div class="link">
-                <h3></h3>
-                <ul>
-                    <li><p></p></li>
-                    <li><p></p></li>
-                </ul>
+                <h3><img src="https://i.pinimg.com/564x/ff/f7/53/fff753af4f5c2e54e3fd24a452baa3ea.jpg"alt="twitch"></h3>
+                    <li><p><a href="https://www.twitch.tv/chocomxcha/">Twitch</a></p></li>
             </div>
             
             <div class="link">
-                <h3></h3>
-                <ul>
-                    <li><p></p></li>
-                    <li><p></p></li>
-                </ul>
+                <h3><img src="https://i.pinimg.com/564x/39/8c/25/398c25a4436e5b8ca72f141084cdc66e.jpg"alt="twitter"></h3>
+                    <li><p><a href="https://twitter.com/choco_mxcha/">Twitter</a></p></li>
             </div>
             
             <div class="link">
-                <h3></h3>
-                <ul>
-                    <li><p></p></li>
-                    <li><p></p></li>
-                </ul>
+                <h3><img src="https://i.pinimg.com/564x/60/00/5d/60005d802c2876c821bdab2bbdb9af2a.jpg"alt="youtube"></h3>
+                    <li><p><a href="https://www.youtube.com/@chocomxcha/">YouTube</a></p></li>
             </div>
         </div>
-            <ul>
-                <li><a href="https://beacons.ai/chocomxcha/">All My Links</a></li>
-                <li><a href="https://www.twitch.tv/chocomxcha/">Twitch</a></li>
-                <li><a href="https://twitter.com/choco_mxcha/">Twitter</a></li>
-                <li><a href="https://www.youtube.com/@chocomxcha/">YouTube</a></li>
-                <li><a href="https://www.instagram.com/choco.mxcha/">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@choco.mxcha/">TikTok</a></li>
-                <li><a href="https://www.pinterest.com/chocomxcha/">Pinterest</a></li>
-            </ul>
+        
+        <div>
+            
+            <div class="link">
+                <h3><img src="https://i.pinimg.com/564x/58/a2/be/58a2bec02ecb40d12e507e2a212c46c6.jpg" alt="instagram"</h3>
+                    <li><p><a href="https://www.instagram.com/choco.mxcha/">Instagram</a></p></li>
+            </div>
+            
+            <div class="link">
+                <h3><img src="https://i.pinimg.com/564x/80/2a/19/802a19bdfaec18f714d44db59b456a6e.jpg" alt="tiktok"></h3>
+                    <li><p><a href="https://www.tiktok.com/@choco.mxcha/">TikTok</a></p></li>
+            </div>
+            
+            <div class="link">
+                <h3><img src="https://i.pinimg.com/564x/1b/76/01/1b7601e035a83c13c208b4ec905ee6d9.jpg" alt="pinterest"></h3>
+                    <li><p><a href="https://www.pinterest.com/chocomxcha/">Pinterest</a></p></li>
+            </div>
+        </div>
     </section>
     
     <a href="Projects">My Projects</a>
