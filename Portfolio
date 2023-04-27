@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialiscale=1.0">
+        <meta name="description" content"A record of all my coding projects">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Deondra Brown"
+        <title>Deondra Brown's Portfolio Website</title>
+        <link rel="stylesheet" media="screen" 
+        href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=c451b85cf126275a22cf7ca62ddacdc0">
+    </head>
+<body>
+<h1><b>Welcome to my Portfolio</b></h1>
+<h2><strong>Enjoy your stay!!</strong></h2>
+<h3><b><u>ABOUT ME</u></b></h3>
+<p1>I'm a 19 year old Uni dropout and I stream on twitch ;)</p1>
+<ul><a href="https://beacons.ai/chocomxcha/">All My Links</a></ul>
+<ul><a href="https://twitch.tv/chocomxcha/">Twitch</a></ul>
+<ul><a href="https://twitter.com/choco_mxcha/">Twitter</a></ul>
+
+</body>
+</html>
