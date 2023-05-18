@@ -3,6 +3,7 @@
 
 <head>
   <link rel="shortcut icon" href="{Favicon}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
 
@@ -46,7 +47,7 @@
     }
 
     body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Karla';
         color:#667799;
         font-size: 12px;
         width:100%;
@@ -62,8 +63,15 @@
         font-smoothing:antialiased;
     }
     
+    }
+    
     h1, h2, h3{
+    	font-family: 'Raleway';
     	color:#5072a7;
+    }
+    
+    h4, h5, h6{
+        font-family: 'Cinzel';
     }
     
     hr {
@@ -188,6 +196,39 @@
    <dt>What games do you play?</dt>
     <dd>Genshin Impact</dd>
     <dd>Sims 4</dd>
+    <br><br>
+    
+    				<!------ Submit Q&A ------->
+<h3>Submit a Q&A</h3>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" name="name"><br><br>
+    <label for="sex">Sex:</label>
+    <input type="radio" name="sex" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="sex" id="female" value="female">
+    <label for="female">Female</label> 
+    <input type="radio" name="sex" id="other" value="other">
+    <label for="other">Other<label> <br><br>
+    <label for="continent">Continent: </label>
+    <select name="continent" id="continent">
+        <option>Select an option</option>
+        <option value="asia">Asia</option>
+        <option value="north africa">North Africa</option>
+      	<option value="south africa">South Africa</option>
+        <option value="north america">North America</option>
+      	<option value="south america">South America</option>
+      	<option value="europe">Europe</option>
+      	<option value="australia">Australia</option>
+      	<option value="caribbean">Caribbean</option>
+      	<option value="pacific islands">Pacific Islands</option>
+    </select><br><br>
+    <label for="message">Message:</label><br>
+    <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+    <input type="checkbox" name="newsletter" id="newsletter">
+    <label for="newsletter">Subscribe?</label><br><br>
+    <input type="submit" value="Submit">
+</form>
   
   <!------ MY WORK ------->
   <br><h1></h1>
@@ -233,7 +274,18 @@
   
   <!------ CONTACT ------->
 
-
+<form>
+  <label for="username">Username:</label>
+  <input type="text" name="username">
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" name="email">
+  <br>
+  <label for="password">Password:</label>
+  <input type="text" name="question">
+  <br>
+  <input type="submit" value="Log In" style="">
+</form>
 
 
 
