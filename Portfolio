@@ -8,6 +8,12 @@
 
   <!-- browser page title ---->
   <title>annaesmie</title>
+  
+   <!-- meta data ---->
+   <meta charset="UTF-8">
+   <meta name="description" content="Programming Portfolio">
+   <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+   <meta name="author" content="Deondra Brown">
 
   <style>
     #s-m-t-tooltip {
@@ -40,8 +46,8 @@
 
     body {
         font-family: 'Open Sans', sans-serif;
-        color:#333;
-        font-size: 10px;
+        color:#667799;
+        font-size: 12px;
         width:100%;
         height:100%;
         margin:10;
@@ -54,9 +60,21 @@
         -webkit-font-smoothing:antialiased;
         font-smoothing:antialiased;
     }
+    
+    h1, h2, h3, h4 {
+    	color:#5072a7;
+    }
+    
+    hr {
+    	border-top: 5px dotted white;
+    }
+    
+    u {
+    	border-bottom: solid white
+    }
 
     a {
-        color: #777;
+        color: #ffff;
         text-decoration: none;
         letter-spacing:0.5px;
         -webkit-transition: all 0.3s ease-in-out;
@@ -67,7 +85,7 @@
     }
 
     a:hover {
-        color: #222; 
+        color: #67ebfa; 
         transition: 0.3s ease-in-out;
     }
 
@@ -115,12 +133,7 @@
 
     ::-webkit-scrollbar-track {background:#fafafa;}
 
-    ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {border:5px solid #fafafa;}
-    
-    .i:before{
-    	content:'\eb2c;
-    	font-family:'cappuccicons';}
-    
+    ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {border:5px solid #fafafa;}    
   </style>
 </head>
     
@@ -130,15 +143,20 @@
 
   <!-------- NAME -------->
   <h2> Welcome to My Portfolio!</h2>
-  <h1><mark blue>Deondra Brown<sup>19</sup></mark></h1>
-  <h3>GAME DEV</h3>
+  <h1><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
+  	<style>
+   mark {
+      background-color:#67ebfa;
+      color: #ffff;
+      }
+  	</style>
+  <h3 style="color: white"><small>GAME DEV</small></h3>
    
   
   <!------- INTRO -------->
-  <p style="border: 1px solid black">Hey! I' m a 19 year old university < strong > DROPOUT < /strong > ... x2. < br > I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p>
+  <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p>
     <style>
   p {
-    height: 40px;
     width: 255px;
     padding: 10px;
     margin: 10px;
@@ -155,7 +173,7 @@
   
   <!------ ABOUT ME ------>
   <br><h1></h1>
-  <h2><span style="border: 1px solid black">Q/A</span> About Me</h2>
+  <h2><span style="border: 1px solid white">Q/A</span> About Me</h2>
     <style>
   span {
     padding: 5px;
@@ -169,7 +187,8 @@
   <!------ MY WORK ------->
   <br><h1></h1>
   <h2>Here' s My Work </h2> 
-<p> Im just going to show you that ik the basics here. <br><i> It 's really just a reminder to myself</i></p>
+<p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
+  
    
     <pre>
     <h1>This is heading 1.</h1><h2>This is heading 2.</h2>
