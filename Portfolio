@@ -210,7 +210,10 @@
 
         <!------- INTRO -------->
         <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>
-	I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p><br><br>
+	I 'm still learning how to code and this <i class="th-folder-1-o"></i> is my portfolio.<br>
+	Enjoy your <strong>STAY </strong>;}</p>
+	
+	<br><br>
 
         <style>
             p {
