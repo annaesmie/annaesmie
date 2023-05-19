@@ -66,23 +66,6 @@
         font-smoothing:antialiased;
     }
     
-    }
-    
-    h1,
-    h2,
-    h3 {
-    	font-family: 'Raleway';
-    	font-size: 22px;
-    	color:#5072a7;
-    }
-    
-    h4,
-    h5,
-    h6 {
-        font-family: 'Cinzel';
-    	font-size: 22px;
-    }
-    
     hr {
     	border-top: 5px dotted white;
     	margin-top: 20px;
@@ -167,16 +150,16 @@
   <header>
     
 <!-------- NAME -------->
+    <h2 style="font-family: Raleway"> Welcome to My Portfolio!</h2>
+    <h1 style="line-height: 0px; margin-top: 5px; font-family: Raleway;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
+    <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><small>FULLSTACK DEV</small></h3>
     
-    <h2> Welcome to My Portfolio!</h2>
-    <h1 style="line-height: 0px; margin-top: 5px;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
       <style>
      mark {
         background-color:#67ebfa;
         color: #ffff;
         }
       </style>
-    <h3 style="color: white;line-height: 0px; margin-top: 5px;"><small>FULLSTACK DEV</small></h3>
 
 
 <!------- INTRO -------->
@@ -190,6 +173,8 @@
     }
       </style>
 
+
+<!----- NAVIGATION ------->
   <hr>
   	<nav>
       <ul>
@@ -215,6 +200,7 @@
    <hr>
  </header>
   
+  
 <!------ SOCIALS ------->
 <br><h1><u>SOCIALS</u></h1>
 <h2 style="line-height: 0px; margin-top: 5px">You Can Find Me Here</h2><br>
@@ -227,6 +213,7 @@
   		padding-inline-start: 1ch;
 		}
     </style>
+ 
   
 <!------ ABOUT ME ------>
 <br><h1></h1>
@@ -244,8 +231,6 @@
 
     
 <!------ Submit Q&A ------->
-
-      
 <fieldset>
 <legend><h3>Submit a Question</h3></legend>
 <form>
@@ -285,7 +270,7 @@
   }
 </style>
   
-  <!------ MY WORK ------->
+<!------ MY WORK ------->
   <br><h1></h1>
   <h2>Here' s My Work </h2> 
 <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
