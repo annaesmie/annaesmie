@@ -47,9 +47,6 @@
     }
 
     body {
-        border:1px solid #eee;
-        border-radius:5px;
-    
         font-family: 'Cinzel';
         color:#4682b4;
         font-size: 12px;
@@ -151,7 +148,7 @@
     
 <!-------- NAME -------->
     <h2 style="font-family: Raleway"> Welcome to My Portfolio!</h2>
-    <h1 style="line-height: 0px; margin-top: 5px; font-family: Raleway;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
+    <h1 style="padding-left: 0px; line-height: 0px; margin-bottom: 8px; font-family: Raleway;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
     <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><small>FULLSTACK DEV</small></h3>
     
       <style>
@@ -168,7 +165,7 @@
     p {
       width: fit-content;
       padding: 10px;
-      margin: 10px;
+      margin: 0px;
       position: center;
     }
       </style>
@@ -179,12 +176,12 @@
   	<nav>
       <ul>
         <li><a href=""><h1 style="border: 1px solid white">annaesmie</h1></a></li>
-        <li><input type="text" name="search" value="search">&nbsp;&nbsp;<i class="th-search-o"></i>
+        <li><input type="search" name="search" value="search">&nbsp;&nbsp;<i class="th-search-o"></i>
         
         <style>
           ul{
           	list-style-type: none;
-  			margin: 10px;
+  			margin: 0px;
   			padding: 0px;
           }
           
@@ -201,7 +198,7 @@
   
   
 <!------ SOCIALS ------->
-<br><h1><u>SOCIALS</u></h1>
+<br><h1 style="padding-left: 0px;"><u>SOCIALS</u></h1>
 <h2 style="line-height: 0px; margin-top: 5px">You Can Find Me Here</h2><br>
 <dt>Instagram &nbsp;<i class="th-instagram-o"></i></dt>
   <dd><a href="https://www.intstagram.com/@deon.x.dra">deon.x.dra</a></dd>
@@ -210,6 +207,7 @@
   		display: list-item;
   		list-style-type: "♡";
   		padding-inline-start: 1ch;
+      	margin-left: 25px;
 		}
     </style>
  
@@ -220,7 +218,7 @@
 <style>
   span {
     padding: 5px;
-    margin: 10px;
+    margin: 0px;
   }
 </style>
 
@@ -231,7 +229,7 @@
     
 <!------ Submit Q&A ------->
 <fieldset>
-<legend><h3>Submit a Question</h3></legend>
+<legend style="margin: 0px;"><h3>Submit a Question</h3></legend>
 <form>
     <label for="name">Name:</label>
     <input type="text" name="name"><br><br>
@@ -276,7 +274,7 @@
   
    
     <pre>
-    <h1>This is heading 1.</h1><h2>This is heading 2.</h2>
+    <h1 style="padding: 0px;">This is heading 1.</h1><h2>This is heading 2.</h2>
 	<h3>This is heading 3.</h3><h4>This is heading 4.</h4>
 	<h5>This is heading 5.</h5><h6>This is heading 6.</h6>
     </pre>
@@ -314,22 +312,22 @@
   
   <!------ CONTACT ------->
 
-
-<form method="post" enctype="application/x-www-form-urlencoded">
-</form>
-<h3>Post A Review</h3>
-      <form method="post">
+<fieldset>
+<legend><h3>Post A Review</h3></legend>
+      <form method="post" enctype="application/x-www-form-urlencoded">
         <label for="name">Name:</label>
         <input type="text" name="name"><br><br>
-         <label for="rating">Rating:</label><br><br>
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" value="0"><br><br>
         <label for="review">Review:</label><br>
     	<textarea name="message" id="message" cols="30" rows="4"></textarea><br>
           <button type="submit">Post</button>
-       </form><br><br><br>
+       </form>
+</fieldset><br><br><br>
+
           
-          
-<h3>Log In to Submit a Commission</h3> 
-            
+<fieldset>
+<legend><h3>Log In to Submit a Commission</h3></legend>             
  <form action="/login">
   <label for="username">Username:</label>
   <input type="text" name="username">
@@ -338,10 +336,11 @@
   <input type="email" name="email">
   <br><br>
   <label for="password">Password:</label>
-  <input type="text" name="question">
+  <input type="password" name="question">
   <br><br>
     <button type="submit">Log In</button>
-</form><br><br><br>
+</form>
+</fieldset><br><br><br>
     
     
 <h3>Here's a copy my Résumé ?</h3>
@@ -352,17 +351,15 @@
     </form>
 
 
-
-
-
-
-
+<!--Footer-->
+<br><br><br><footer>
+  <a href="mailto:anna03exe@gmail.com">Business Email: anna03exe@gmail.com<br>For promotions and collaborations</a>
 
 
 <!------ LEAVE CREDIT IN TACT ------------>
 <div class="taezs"><a href="https://taezs.tumblr.com"><span class="th th-paperclip"></span></a></div>
 <!------ LEAVE CREDIT IN TACT ------------>
-
+</footer>
 
 </body>
 </html>
