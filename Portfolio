@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="shortcut icon" href="{Favicon}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://panels.twitch.tv/panel-505709597-image-821ab505-5503-4475-a000-f5c581e563a8">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
 
-  <!-- browser page title ---->
+<!-- browser page title ---->
   <title>annaesmie</title>
   
-   <!-- meta data ---->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Programming Portfolio">
-   <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
-   <meta name="author" content="Deondra Brown">
+<!-- meta data ---->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Programming Portfolio">
+  <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+  <meta name="author" content="Deondra Brown">
 
   <style>
     #s-m-t-tooltip {
@@ -47,16 +47,19 @@
     }
 
     body {
-        font-family: 'Karla';
-        color:#667799;
+        border:1px solid #eee;
+        border-radius:5px;
+    
+        font-family: 'Cinzel';
+        color:#4682b4;
         font-size: 12px;
         width:100%;
         height:100%;
-        margin:10;
-        padding:10;
+        margin:20;
+        padding:0;
         left:0;
         top:0;
-        background-color:#fafa;
+        background-color:#333;
         letter-spacing:0.25px;
         -moz-osx-font-smoothing:grayscale;
         -webkit-font-smoothing:antialiased;
@@ -65,18 +68,26 @@
     
     }
     
-    h1, h2, h3{
+    h1,
+    h2,
+    h3 {
     	font-family: 'Raleway';
+    	font-size: 22px;
     	color:#5072a7;
     }
     
-    h4, h5, h6{
+    h4,
+    h5,
+    h6 {
         font-family: 'Cinzel';
+    	font-size: 22px;
     }
     
     hr {
     	border-top: 5px dotted white;
-    	margin-top: 25px;
+    	margin-top: 20px;
+    	margin-bottom: 10px;
+    	padding: 0px;
     }
     
     u {
@@ -111,9 +122,9 @@
 
     .taezs a{
         display:inline-block;
-        background:#fff;
+        background:#4682b4;
         border:1px solid #eee;
-        border-radius:3px;
+        border-radius:5px;
         position:fixed;
         right:20px;
         padding:5px;
@@ -136,70 +147,107 @@
     }
 
     ::-webkit-scrollbar{
-        height:11px;
-        width:11px;
+        height:12px;
+        width:12px;
         background:inherit;
     }
 
-    ::-webkit-scrollbar-thumb {background:black;}
+    ::-webkit-scrollbar-thumb {background:steelblue;}
 
-    ::-webkit-scrollbar-track {background:#fafafa;}
+    ::-webkit-scrollbar-track {background:#333;}
 
-    ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {border:5px solid #fafafa;}    
+    ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {border:3px solid #fff; border-radius: 5px;}    
   </style>
 </head>
     
-   <!------------------------ START OF BODY ------------------------>
+<!------------------------ START OF BODY ------------------------>
     
 <body>
-
-  <!-------- NAME -------->
-  <h2> Welcome to My Portfolio!</h2>
   
-  <h1 style="line-height: 0px; margin-top: 5px;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
-  	<style>
-   mark {
-      background-color:#67ebfa;
-      color: #ffff;
-      }
-  	</style>
-  <h3 style="color: white;line-height: 0px; margin-top: 5px;"><small>GAME DEV</small></h3>
-   
-  
-  <!------- INTRO -------->
-  <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p>
-    <style>
-  p {
-    width: fit-content;
-    padding: 10px;
-    margin: 10px;
-  }
-	</style>
+  <header>
     
-<hr>
+<!-------- NAME -------->
+    
+    <h2> Welcome to My Portfolio!</h2>
+    <h1 style="line-height: 0px; margin-top: 5px;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
+      <style>
+     mark {
+        background-color:#67ebfa;
+        color: #ffff;
+        }
+      </style>
+    <h3 style="color: white;line-height: 0px; margin-top: 5px;"><small>FULLSTACK DEV</small></h3>
+
+
+<!------- INTRO -------->
+<p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p>
+      <style>
+    p {
+      width: fit-content;
+      padding: 10px;
+      margin: 10px;
+      position: center;
+    }
+      </style>
+
+  <hr>
+  	<nav>
+      <ul>
+        <li><a href=""><h1 style="border: 1px solid white">annaesmie</h1></a></li>
+        <li><input type="text" name="search" value="search">&nbsp;&nbsp;<i class="th-search-o"></i>
+        
+        <style>
+          ul{
+          	list-style-type: none;
+  			margin: 10px;
+  			padding: 0px;
+          }
+          
+          h1 {
+          	width:fit-content;
+          	padding:10px
+          	margin: ;
+          }
+        </style>
+        
+      </ul>
+    </nav>
+   <hr>
+ </header>
   
-  <!------ SOCIALS ------->
-  <br><h1><u>SOCIALS</u></h1>
-  <h2 style="line-height: 0px; margin-top: 5px">You Can Find Me Here</h2><br>
-  <dt>Instagram &nbsp<i class="th-instagram-o"></i></dt>
-  	<dd><a href="https://www.intstagram.com/@deon.x.dra">deon.x.dra</a></dd>
-  
-  <!------ ABOUT ME ------>
-  <br><h1></h1>
-  <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
+<!------ SOCIALS ------->
+<br><h1><u>SOCIALS</u></h1>
+<h2 style="line-height: 0px; margin-top: 5px">You Can Find Me Here</h2><br>
+<dt>Instagram &nbsp;<i class="th-instagram-o"></i></dt>
+  <dd><a href="https://www.intstagram.com/@deon.x.dra">deon.x.dra</a></dd>
     <style>
+      dd {
+  		display: list-item;
+  		list-style-type: "♡";
+  		padding-inline-start: 1ch;
+		}
+    </style>
+  
+<!------ ABOUT ME ------>
+<br><h1></h1>
+<h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
+<style>
   span {
     padding: 5px;
     margin: 10px;
   }
-	</style>
-   <dt>What games do you play?</dt>
-    <dd>Genshin Impact</dd>
-    <dd>Sims 4</dd>
-    <br><br>
+</style>
+
+<dt>What games do you play?</dt>
+  <dd>Genshin Impact</dd>
+    <dd>Sims 4</dd><br><br>
+
     
-    				<!------ Submit Q&A ------->
-<h3>Submit a Q&A</h3>
+<!------ Submit Q&A ------->
+
+      
+<fieldset>
+<legend><h3>Submit a Question</h3></legend>
 <form>
     <label for="name">Name:</label>
     <input type="text" name="name"><br><br>
@@ -209,13 +257,12 @@
     <input type="radio" name="sex" id="female" value="female">
     <label for="female">Female</label> 
     <input type="radio" name="sex" id="other" value="other">
-    <label for="other">Other<label> <br><br>
-    <label for="continent">Continent: </label>
+    <label for="other">Other</label> <br><br>
+    <label for="continent">Continent:</label>
     <select name="continent" id="continent">
         <option>Select an option</option>
         <option value="asia">Asia</option>
-        <option value="north africa">North Africa</option>
-      	<option value="south africa">South Africa</option>
+        <option value="africa">Africa</option>
         <option value="north america">North America</option>
       	<option value="south america">South America</option>
       	<option value="europe">Europe</option>
@@ -226,9 +273,17 @@
     <label for="message">Message:</label><br>
     <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
     <input type="checkbox" name="newsletter" id="newsletter">
-    <label for="newsletter">Subscribe?</label><br><br>
-    <input type="submit" value="Submit">
+    <label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br>
+    <button type="submit">Submit</button>
 </form>
+</fieldset>
+
+<style>
+  fieldset {
+  		width: fit-content;
+  		padding: 20px;
+  }
+</style>
   
   <!------ MY WORK ------->
   <br><h1></h1>
@@ -254,38 +309,63 @@
           <td><h3>Mocha Swirl.exe</h3>
           <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100"></td>
            <td><h3>Strawberry Lemonade</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100"</td>
+          <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100"></td>
            <td><h3>Pastel Cloud</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100"</td>
+          <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100"></td>
         </tr>
+        <tr>
           <th><h3>Stream Overlays</h3></th>        
         	<td>X</td>
             <td><h3>Strawberry Lemonade</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100"</td>
+          <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100"></td>
           <td><h3>Pastel Cloud</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100"</td>
+          <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100"></td>
       </tr>
       </tbody>
       <tfoot>
       </tfoot>
-    </table>
+    </table><br><br>
   
   <!------- GOALS -------->
   
   <!------ CONTACT ------->
 
-<form>
+
+<form method="post" enctype="application/x-www-form-urlencoded">
+</form>
+<h3>Post A Review</h3>
+      <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br><br>
+         <label for="rating">Rating:</label><br><br>
+        <label for="review">Review:</label><br>
+    	<textarea name="message" id="message" cols="30" rows="4"></textarea><br>
+          <button type="submit">Post</button>
+       </form><br><br><br>
+          
+          
+<h3>Log In to Submit a Commission</h3> 
+            
+ <form action="/login">
   <label for="username">Username:</label>
   <input type="text" name="username">
-  <br>
+  <br><br>
   <label for="email">Email:</label>
   <input type="email" name="email">
-  <br>
+  <br><br>
   <label for="password">Password:</label>
   <input type="text" name="question">
-  <br>
-  <input type="submit" value="Log In" style="">
-</form>
+  <br><br>
+    <button type="submit">Log In</button>
+</form><br><br><br>
+    
+    
+<h3>Here's a copy my Résumé ?</h3>
+    <form method="get">
+      <label for="email">Email:</label>
+      <input type="email">
+        <button type="submit">Thank You</button>
+    </form>
 
 
 
