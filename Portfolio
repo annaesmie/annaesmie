@@ -2,404 +2,457 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="shortcut icon" href="https://panels.twitch.tv/panel-505709597-image-821ab505-5503-4475-a000-f5c581e563a8">
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-  <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://panels.twitch.tv/panel-505709597-image-821ab505-5503-4475-a000-f5c581e563a8">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
 
-<!-- browser page title ---->
-  <title>annaesmie</title>
-  
-<!-- meta data ---->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Programming Portfolio">
-  <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
-  <meta name="author" content="Deondra Brown">
+    <!-- browser page title ---->
+    <title>annaesmie</title>
 
-  <style>
-    #s-m-t-tooltip {
-        max-width:240px;
-        padding:3px 10px;
-        margin-left:20px;
-        margin-right:15px;
-        margin-top:-8px;
-        z-index:99999999990;
-        transition:.2s;
-        line-height:15px;
-        font-size:12px;
-        background:#f7f7f7;
-        color:#000}
+    <!-- meta data ---->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming Portfolio">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+    <meta name="author" content="Deondra Brown">
 
-    .iframe-controls--desktop {
-        position:fixed;
-        top:0px;
-        right:0px;
-        filter:invert(100%);
-        -webkit-filter:invert(100%); 
-        z-index:999999999999;
-        -webkit-transform:scale(0.6,0.6);
-        -webkit-transform-origin: 100% 0%;
-        -ms-transform-origin:100% 0%;
-        -ms-transform:scale(0.6,0.6);
-        transform:scale(0.6,0.6);
-        transform-origin:100% 0%;
-    }
+    <style>
+        #s-m-t-tooltip {
+            max-width: 240px;
+            padding: 3px 10px;
+            margin-left: 20px;
+            margin-right: 15px;
+            margin-top: -8px;
+            z-index: 99999999990;
+            transition: .2s;
+            line-height: 15px;
+            font-size: 12px;
+            background: #f7f7f7;
+            color: #000
+        }
 
-    body {
-        font-family: 'Cinzel';
-        color:#4682b4;
-        font-size: 12px;
-        width:100%;
-        height:100%;
-        margin:20;
-        padding:0;
-        left:0;
-        top:0;
-        background-color:#333;
-        letter-spacing:0.25px;
-        -moz-osx-font-smoothing:grayscale;
-        -webkit-font-smoothing:antialiased;
-        font-smooth:antialiased;
-    }
-    
-    hr {
-    	border-top: 5px dotted white;
-    	margin-top: 20px;
-    	margin-bottom: 10px;
-    	padding: 0px;
-    }
-    
-    u {
-    	text-decoration-line: underline;
-  		text-decoration-style: wavy;
-  		text-decoration-color: white;
-    }
+        .iframe-controls--desktop {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            z-index: 999999999999;
+            -webkit-transform: scale(0.6, 0.6);
+            -webkit-transform-origin: 100% 0%;
+            -ms-transform-origin: 100% 0%;
+            -ms-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+            transform-origin: 100% 0%;
+        }
 
-    a {
-        color: #ffff;
-        text-decoration: none;
-        letter-spacing:0.5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .rating {
-			display: inline;
-			flex-direction: row-reverse;
-			justify-content: left;
-    		right:20px;
-        	padding:5px;
-        	bottom:20px;
-   	}
-    .rating > input{
-             display:none;
-    }
-    .rating > label {
+        body {
+            font-family: 'Cinzel';
+            color: #4682b4;
+            font-size: 12px;
+            width: 100%;
+            height: 100%;
+            margin: 20;
+            padding: 0;
+            left: 0;
+            top: 0;
+            background-color: #333;
+            letter-spacing: 0.25px;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-smooth: antialiased;
+        }
+
+        hr {
+            border-top: 5px dotted white;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            padding: 0px;
+        }
+
+        u {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: white;
+        }
+
+        a {
+            color: #ffff;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+            right: 20px;
+            padding: 5px;
+            bottom: 20px;
+        }
+
+        .rating>input {
+            display: none;
+        }
+
+        .rating>label {
             position: relative;
             width: 1.1em;
             font-size: 22px;
             color: #FFD700;
             cursor: pointer;
-    }
-    .rating > label::before{
+        }
+
+        .rating>label::before {
             content: "\2605";
             position: absolute;
             opacity: 0;
-    }
-    .rating > label:hover:before,
-    .rating > label:hover ~ label:before {
-            opacity: 1 !important
-    }
-    .rating > input:checked ~ label:before{
-            opacity:1;
-    }
-    .rating:hover > input:checked ~ label:before{
-            opacity: 0.4;
-    }
-
-    a:hover {
-        color: #67ebfa; 
-        transition: 0.3s ease-in-out;
-    }
-
-    .taezs{
-        position:fixed;
-        bottom:20px;
-        right:20px;
-        width:200px;
-        height:20px;
-    }
-
-    .taezs a{
-        display:inline-block;
-        background:#4682b4;
-        border:1px solid #eee;
-        border-radius:5px;
-        position:fixed;
-        right:20px;
-        padding:5px;
-        bottom:20px;
-    }
-
-    .taezs a:before{
-        content:"theme by taezs";
-        position:fixed;
-        right:70px;
-        opacity:0;
-        bottom:25px;
-        transition:.5s;
-    }
-
-    .taezs a:hover:before{
-        opacity:1;
-        right:60px;
-        transition:.5s;
-    }
-
-    ::-webkit-scrollbar{
-        height:12px;
-        width:12px;
-        background:inherit;
-    }
-
-    ::-webkit-scrollbar-thumb {background:steelblue;}
-
-    ::-webkit-scrollbar-track {background:#333;}
-
-    ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {border:3px solid #fff; border-radius: 5px;}    
-  </style>
-</head>
-    
-<!------------------------ START OF BODY ------------------------>
-    
-<body>
-  
-  <header>
-    
-<!-------- NAME -------->
-    <h2 style="font-family: Raleway"> Welcome to My Portfolio!</h2>
-    <h1 style="padding-left: 0px; line-height: 0px; margin-bottom: 8px; font-family: Raleway;"><mark>Deondra Brown<sup><small>19</small></sup></mark></h1>
-    <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><small>FULLSTACK DEV</small></h3>
-    
-      <style>
-     mark {
-        background-color:#67ebfa;
-        color: #ffff;
         }
-      </style>
 
+        .rating>label:hover:before,
+        .rating>label:hover~label:before {
+            opacity: 1 !important
+        }
 
-<!------- INTRO -------->
-<p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p>
-      <style>
-    p {
-      width: fit-content;
-      padding: 10px;
-      margin: 0px;
-      position: center;
-    }
-      </style>
+        .rating>input:checked~label:before {
+            opacity: 1;
+        }
 
+        .rating:hover>input:checked~label:before {
+            opacity: 0.4;
+        }
 
-<!----- NAVIGATION ------->
-  <hr>
-  	<nav>
-      <ul>
-        <li><a href=""><h1 style="border: 1px solid white">annaesmie</h1></a></li>
-        <li><input type="search" name="search" value="search">&nbsp;&nbsp;<i class="th-search-o"></i>
-        
-        <style>
-          ul{
-          	list-style-type: none;
-  			margin: 0px;
-  			padding: 0px;
-          }
-          
-          h1 {
-          	width:fit-content;
-          	padding:10px
-          }
-        </style>
-        
-      </ul>
-    </nav>
-   <hr>
- </header>
-  
-  
-<!------ SOCIALS ------->
-<br><h1 style="padding-left: 0px;"><u>SOCIALS</u></h1>
-<h2 style="line-height: 0px; margin-top: 5px">You Can Find Me Here</h2><br>
-<dt>Instagram &nbsp;<i class="th-instagram-o"></i></dt>
-  <dd><a href="https://www.intstagram.com/@deon.x.dra">deon.x.dra</a></dd>
-    <style>
-      dd {
-  		display: list-item;
-  		list-style-type: "♡";
-  		padding-inline-start: 1ch;
-      	margin-left: 25px;
-		}
+        a:hover {
+            color: #67ebfa;
+            transition: 0.3s ease-in-out;
+        }
+
+        .taezs {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            height: 20px;
+        }
+
+        .taezs a {
+            display: inline-block;
+            background: #4682b4;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            position: fixed;
+            right: 20px;
+            padding: 5px;
+            bottom: 20px;
+        }
+
+        .taezs a:before {
+            content: "theme by taezs";
+            position: fixed;
+            right: 70px;
+            opacity: 0;
+            bottom: 25px;
+            transition: .5s;
+        }
+
+        .taezs a:hover:before {
+            opacity: 1;
+            right: 60px;
+            transition: .5s;
+        }
+
+        ::-webkit-scrollbar {
+            height: 12px;
+            width: 12px;
+            background: inherit;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: steelblue;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb,
+        ::-webkit-scrollbar-track {
+            border: 3px solid #fff;
+            border-radius: 5px;
+        }
     </style>
- 
-  
-<!------ ABOUT ME ------>
-<br><h1></h1>
-<h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
-<style>
-  span {
-    padding: 5px;
-    margin: 0px;
-  }
-</style>
+</head>
 
-<dt>What games do you play?</dt>
-  <dd>Genshin Impact</dd>
+<!------------------------ START OF BODY ------------------------>
+
+<body>
+
+    <header>
+
+        <!-------- NAME -------->
+        <h2 style="font-family: Raleway"> Welcome to My Portfolio!</h2>
+        <h1 style="padding-left: 0px; line-height: 0px; margin-bottom: 8px; font-family: Raleway; color: white;">Deondra Brown<sup><small>19</small></sup></h1>
+        <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><mark><small>FULLSTACK DEV</small></mark></h3>
+
+        <style>
+            mark {
+                background-color: #67ebfa;
+                color: #ffff;
+            }
+        </style>
+
+
+        <!------- INTRO -------->
+        <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>
+	I 'm still learning how to code and this &nbsp; is my portfolio.<br>Enjoy your <strong>STAY </strong>;}</p><br><br>
+
+        <style>
+            p {
+                width: fit-content;
+                padding: 10px;
+                margin: 0px;
+                position: center;
+            }
+        </style>
+
+
+        <!----- NAVIGATION ------->
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="">
+                        <h1 style="border: 1px solid white">annaesmie</h1>
+                    </a></li>
+                <li>
+                    <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
+		    <input type="search" name="search" value="search">
+		    </form>&nbsp;&nbsp;<i class="th-search-o"></i>
+                </li>
+
+                <style>
+                    ul {
+                        list-style-type: none;
+                        margin: 0px;
+                        padding: 0px;
+                    }
+
+                    h1 {
+                        width: fit-content;
+                        padding: 10px
+                    }
+                </style>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+
+    <!------ SOCIALS ------->
+    <br>
+    <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
+    <h2 style="line-height: 0px;">You Can Find Me Here:</h2><br>
+    <dt>
+        <h3 style="font-family: Raleway; padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+    </dt>
+    <dd><a href="https://www.intstagram.com/@deon.x.dra">
+            <h4>deon.x.dra</h4>
+        </a></dd>
+    <style>
+        dd {
+            display: list-item;
+            list-style-type: "♡";
+            padding-inline-start: 1ch;
+            margin-left: 25px;
+        }
+    </style>
+
+
+    <!------ ABOUT ME ------>
+    <br>
+    <h1></h1>
+    <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
+    <style>
+        span {
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+
+    <dt>What games do you play?</dt>
+    <dd>Genshin Impact</dd>
     <dd>Sims 4</dd><br><br>
 
-    
-<!------ Submit Q&A ------->
-<fieldset>
-<legend style="margin: 0px;"><h3>Submit a Question</h3></legend>
-<form>
-    <label for="name">Name:</label>
-    <input type="text" name="name"><br><br>
-    <label for="sex">Sex:</label>
-    <input type="radio" name="sex" id="male" value="male">
-    <label for="male">Male</label>
-    <input type="radio" name="sex" id="female" value="female">
-    <label for="female">Female</label> 
-    <input type="radio" name="sex" id="other" value="other">
-    <label for="other">Other</label> <br><br>
-    <label for="continent">Continent:</label>
-    <select name="continent" id="continent">
-        <option>Select an option</option>
-        <option value="asia">Asia</option>
-        <option value="africa">Africa</option>
-        <option value="north america">North America</option>
-      	<option value="south america">South America</option>
-      	<option value="europe">Europe</option>
-      	<option value="australia">Australia</option>
-      	<option value="caribbean">Caribbean</option>
-      	<option value="pacific islands">Pacific Islands</option>
-    </select><br><br>
-    <label for="message">Message:</label><br>
-    <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
-    <input type="checkbox" name="newsletter" id="newsletter">
-    <label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br>
-    <button type="submit">Submit</button>
-</form>
-</fieldset>
 
-<style>
-  fieldset {
-  		width: fit-content;
-  		padding: 20px;
-  }
-</style>
-  
-<!------ MY WORK ------->
-  <br><h1></h1>
-  <h2>Here' s My Work </h2> 
-<p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
-  
-   
+    <!------ Submit Q&A ------->
+    <fieldset>
+        <legend style="margin: 0px;">
+            <h3>Submit a Question</h3>
+        </legend>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br><br>
+            <label for="sex">Sex:</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="other" value="other">
+            <label for="other">Other</label> <br><br>
+            <label for="continent">Continent:</label>
+            <select name="continent" id="continent">
+                <option>Select an option</option>
+                <option value="asia">Asia</option>
+                <option value="africa">Africa</option>
+                <option value="north america">North America</option>
+                <option value="south america">South America</option>
+                <option value="europe">Europe</option>
+                <option value="australia">Australia</option>
+                <option value="caribbean">Caribbean</option>
+                <option value="pacific islands">Pacific Islands</option>
+            </select><br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+
+    <style>
+        fieldset {
+            width: fit-content;
+            padding: 20px;
+        }
+    </style>
+
+    <!------ MY WORK ------->
+    <br>
+    <h1></h1>
+    <h2>Here' s My Work </h2>
+    <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
+
+
     <pre>
     <h1 style="padding: 0px;">This is heading 1.</h1><h2>This is heading 2.</h2>
 	<h3>This is heading 3.</h3><h4>This is heading 4.</h4>
 	<h5>This is heading 5.</h5><h6>This is heading 6.</h6>
     </pre>
-    
+
     <table border="1" style="border-collapse: collapse; border-color: white;">
-      <thead>
-        <tr>
-          <th colspan="4"><h2>Creations on my Ko-fi</h2></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th><h3>Twitch Panels</h3></th>
-          <td><h3>Mocha Swirl.exe</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100"></td>
-           <td><h3>Strawberry Lemonade</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100"></td>
-           <td><h3>Pastel Cloud</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100"></td>
-        </tr>
-        <tr>
-          <th><h3>Stream Overlays</h3></th>        
-        	<td>X</td>
-            <td><h3>Strawberry Lemonade</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100"></td>
-          <td><h3>Pastel Cloud</h3>
-          <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100"></td>
-      </tr>
-      </tbody>
-      <tfoot>
-      </tfoot>
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <h2>Creations on my Ko-fi</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <h3>Twitch Panels</h3>
+                </th>
+                <td>
+                    <h3>Mocha Swirl.exe</h3>
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100">
+                </td>
+                <td>
+                    <h3>Strawberry Lemonade</h3>
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100">
+                </td>
+                <td>
+                    <h3>Pastel Cloud</h3>
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Stream Overlays</h3>
+                </th>
+                <td>X</td>
+                <td>
+                    <h3>Strawberry Lemonade</h3>
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100">
+                </td>
+                <td>
+                    <h3>Pastel Cloud</h3>
+                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
     </table><br><br>
-  
-  <!------- GOALS -------->
-  
-  <!------ CONTACT ------->
 
-<fieldset>
-<legend><h3>Post A Review</h3></legend>
-      <form method="post" enctype="application/x-www-form-urlencoded">
-        <label for="name">Name:</label>
-        <input type="text" name="name"><br><br>
-        <label for="review">Review:</label>
-          <div class="rating">
-            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
-            </div> 
-    	<textarea name="message" id="message" cols="30" rows="4"></textarea><br>
-          <button type="submit">Post</button>
-       </form>
-</fieldset><br><br><br>
+    <!------- GOALS -------->
 
-          
-<fieldset>
-<legend><h3>Log In to Submit a Commission</h3></legend>             
- <form action="/login">
-  <label for="username">Username:</label>
-  <input type="text" name="username">
-  <br><br>
-  <label for="email">Email:</label>
-  <input type="email" name="email">
-  <br><br>
-  <label for="password">Password:</label>
-  <input type="password" name="question">
-  <br><br>
-    <button type="submit">Log In</button>
-</form>
-</fieldset><br><br><br>
-    
-    
-<h3>Here's a copy my Résumé ?</h3>
+    <!------ CONTACT ------->
+
+    <fieldset>
+        <legend>
+            <h3>Post A Review</h3>
+        </legend>
+        <form method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br><br>
+            <label for="review">Review:</label>
+            <div class="rating">
+                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea><br>
+            <button type="submit">Post</button>
+        </form>
+    </fieldset><br><br><br>
+
+
+    <fieldset>
+        <legend>
+            <h3>Log In to Submit a Commission</h3>
+        </legend>
+        <form action="/login">
+            <label for="username">Username:</label>
+            <input type="text" name="username">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="question">
+            <br><br>
+            <button type="submit">Log In</button>
+        </form>
+    </fieldset><br><br><br>
+
+
+    <h3>Here's a copy my Résumé ?</h3>
     <form method="get">
-      <label for="email">Email:</label>
-      <input type="email">
+        <label for="email">Email:</label>
+        <input type="email">
         <button type="submit">Thank You</button>
     </form>
 
 
-<!--Footer-->
-<br><br><br><footer>
-  <a href="mailto:anna03exe@gmail.com">Business Email: anna03exe@gmail.com<br>For promotions and collaborations</a>
+    <!--Footer-->
+    <br><br><br>
+    <footer>
+        <a href="mailto:anna03exe@gmail.com">Business Email: anna03exe@gmail.com<br>For promotions and collaborations</a>
 
 
-<!------ LEAVE CREDIT IN TACT ------------>
-<div class="taezs"><a href="https://taezs.tumblr.com"><span class="th th-paperclip"></span></a></div>
-<!------ LEAVE CREDIT IN TACT ------------>
-</footer>
+        <!------ LEAVE CREDIT IN TACT ------------>
+        <div class="taezs"><a href="https://taezs.tumblr.com"><span class="th th-paperclip"></span></a></div>
+        <!------ LEAVE CREDIT IN TACT ------------>
+    </footer>
 
 </body>
-</html>
 
+</html>
