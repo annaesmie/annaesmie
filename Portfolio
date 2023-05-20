@@ -1,5 +1,6 @@
 <!------ page base code by taezs ------>
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <link rel="shortcut icon" href="https://panels.twitch.tv/panel-505709597-image-821ab505-5503-4475-a000-f5c581e563a8">
@@ -64,8 +65,27 @@
             font-smooth: antialiased;
         }
 
+        aside {
+            display: flex;
+            float: left;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            float: right;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+        }
+
         hr {
             border-top: 5px dotted white;
+            border-left: 5px dotted white;
+            border-right: 0px;
+            border-bottom: 0px;
             margin-top: 0px;
             margin-bottom: 10px;
             padding: 0px;
@@ -86,6 +106,16 @@
             -o-transition: all 0.3s ease-in-out;
             -ms-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
+        }
+
+        button {
+            border: 1px solid #fff;
+            display: inline;
+            padding: 5px;
+            background: steelblue;
+            border-radius: 10px;
+            font-family: "Raleway";
+            cursor: pointer;
         }
 
         .rating {
@@ -196,7 +226,6 @@
     <header>
 
         <!-------- NAME -------->
-        <h2 style="font-family: Raleway"> Welcome to My Portfolio!</h2>
         <h1 style="padding-left: 0px; line-height: 0px; margin-bottom: 8px; font-family: Raleway; color: white;">Deondra Brown<sup><small>19</small></sup></h1>
         <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><mark><small>FULLSTACK DEV</small></mark></h3>
 
@@ -209,241 +238,276 @@
 
 
         <!------- INTRO -------->
+        <br>
         <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>
-	I 'm still learning how to code and this <i class="th-folder-1-o"></i> is my portfolio.<br>
-	Enjoy your <strong>STAY </strong>;}</p>
-	
-	<br><br>
+            I 'm still learning how to code and this <i class="th-folder-1-o"></i> is my portfolio.<br>
+            Enjoy your <strong>STAY </strong>;}</p>
+
+        <br><br>
+        <hr>
 
         <style>
             p {
                 width: fit-content;
                 padding: 10px;
                 margin: 0px;
-                position: center;
             }
         </style>
 
 
         <!----- NAVIGATION ------->
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="">
-                        <h1 style="border: 1px solid white">annaesmie</h1>
-                    </a></li>
-                <li>
-                    <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
-		    <input type="search" name="search" value="search">
-		    </form>&nbsp;&nbsp;<i class="th-search-o"></i>
-                </li>
+        <aside>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="">
+                            <h1 style="border: 1px solid white">annaesmie</h1>
+                        </a>
+                    </li>
 
-                <style>
-                    ul {
-                        list-style-type: none;
-                        margin: 0px;
-                        padding: 0px;
-                    }
+                    <li>
+                        <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
+                            <input type="search" name="location" placeholder="Search..">
+                            <button type="submit"><i class="th-search-o"></i></button>
+                            &nbsp;&nbsp;
+                        </form>
+                    </li>
 
-                    h1 {
-                        width: fit-content;
-                        padding: 10px
-                    }
-                </style>
+                    <style>
+                        ul {
+                            list-style-type: none;
+                            margin: 0px;
+                            padding: 0px;
+                        }
 
-            </ul>
-        </nav>
-        <hr>
+                        h1 {
+                            width: fit-content;
+                            padding: 10px
+                        }
+                    </style>
+
+                </ul>
+            </nav><br>
+            <hr>
+        </aside>
     </header>
 
 
+
     <!------ SOCIALS ------->
-    <br>
-    <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
-    <h2 style="line-height: 0px;">You Can Find Me Here:</h2><br>
-    <dt>
-        <h3 style="font-family: Raleway; padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
-    </dt>
-    <dd><a href="https://www.intstagram.com/@deon.x.dra">
-            <h4>deon.x.dra</h4>
-        </a></dd>
-    <style>
-        dd {
-            display: list-item;
-            list-style-type: "♡";
-            padding-inline-start: 1ch;
-            margin-left: 25px;
-        }
-    </style>
+    <main>
+
+        <br>
+        <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
+        <h2 style="line-height: 0px;">You Can Find Me Here:</h2>
+        <br><br>
+        <section class="socials">
+          
+          <dl>
+
+                <dt>
+                    <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+                </dt>
+                <dd><a href="https://www.intstagram.com/@deon.x.dra">
+                        <h4>deon.x.dra</h4>
+                    </a>
+                </dd>
+<br>
+                <dt>
+                    <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+                </dt>
+                <dd><a href="https://www.intstagram.com/@deon.x.dra">
+                        <h4>deon.x.dra</h4>
+                    </a>
+                </dd>
+  
+  </dl>
+
+            <style>
+             	dl{
+              		display: flex;
+                    padding: 5px;
+                    margin: 10px;
+              		width: 150px;
+              }
+              
+                dt {
+                    display: list-item;
+                    list-style-type: none;
+                    font-family: 'Raleway';
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: 0px
+              		width: 0px;
+                }
+
+                dd {
+                    display: list-item;
+                    list-style-type: "♡";
+                    padding-inline-start: 1px;
+                    margin-left: 10px;
+                    line-height: 1.5;
+              		width:150px;
+                    color: white;
+                }
+            </style>
+        </section>
 
 
-    <!------ ABOUT ME ------>
-    <br>
-    <h1></h1>
-    <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
-    <style>
-        span {
-            padding: 5px;
-            margin: 0px;
-        }
-    </style>
+        <!------ ABOUT ME ------>
+        <br>
+        <h1></h1>
+        <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
+        <style>
+            span {
+                padding: 5px;
+                margin: 0px;
+            }
+        </style>
 
-    <dt>What games do you play?</dt>
-    <dd>Genshin Impact</dd>
-    <dd>Sims 4</dd><br><br>
-
-
-    <!------ Submit Q&A ------->
-    <fieldset>
-        <legend style="margin: 0px;">
-            <h3>Submit a Question</h3>
-        </legend>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" name="name"><br><br>
-            <label for="sex">Sex:</label>
-            <input type="radio" name="sex" id="male" value="male">
-            <label for="male">Male</label>
-            <input type="radio" name="sex" id="female" value="female">
-            <label for="female">Female</label>
-            <input type="radio" name="sex" id="other" value="other">
-            <label for="other">Other</label> <br><br>
-            <label for="continent">Continent:</label>
-            <select name="continent" id="continent">
-                <option>Select an option</option>
-                <option value="asia">Asia</option>
-                <option value="africa">Africa</option>
-                <option value="north america">North America</option>
-                <option value="south america">South America</option>
-                <option value="europe">Europe</option>
-                <option value="australia">Australia</option>
-                <option value="caribbean">Caribbean</option>
-                <option value="pacific islands">Pacific Islands</option>
-            </select><br><br>
-            <label for="message">Message:</label><br>
-            <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
-            <input type="checkbox" name="newsletter" id="newsletter">
-            <label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </fieldset>
-
-    <style>
-        fieldset {
-            width: fit-content;
-            padding: 20px;
-        }
-    </style>
-
-    <!------ MY WORK ------->
-    <br>
-    <h1></h1>
-    <h2>Here' s My Work </h2>
-    <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
+        <dl>
+          <dt>
+            <h4>What games do you play?</h4>
+          </dt>
+            <dd>Genshin Impact</dd>
+            <dd>Sims 4</dd>
+        </dl>
 
 
-    <pre>
-    <h1 style="padding: 0px;">This is heading 1.</h1><h2>This is heading 2.</h2>
-	<h3>This is heading 3.</h3><h4>This is heading 4.</h4>
-	<h5>This is heading 5.</h5><h6>This is heading 6.</h6>
+        <!------ Submit Q&A ------->
+        <br><br>
+        <fieldset>
+            <legend style="margin: 0px;">
+                <h3>Submit a Question</h3>
+            </legend>
+            <form><label for="name">Name:</label><input type="text" name="name"><br><br><label for="sex">Sex:</label><input type="radio" name="sex" id="male" value="male"><label for="male">Male</label><input type="radio" name="sex" id="female" value="female"><label for="female">Female</label><input type="radio" name="sex" id="other" value="other"><label for="other">Other</label><br><br><label for="continent">Continent:</label><select name="continent" id="continent">
+                    <option>Select an option</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="north america">North America</option>
+                    <option value="south america">South America</option>
+                    <option value="europe">Europe</option>
+                    <option value="australia">Australia</option>
+                    <option value="caribbean">Caribbean</option>
+                    <option value="pacific islands">Pacific Islands</option>
+                </select><br><br><label for="message">Message:</label><br><textarea name="message" id="message" cols="30" rows="4"></textarea><br><br><input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br><button type="submit">Submit</button></form>
+        </fieldset>
+        <style>
+            fieldset {
+                width: fit-content;
+                padding: 20px;
+            }
+        </style>
+
+        <!------ MY WORK ------->
+        <br>
+        <h1></h1>
+        <h2>Here' s My Work </h2>
+        <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
+
+
+        <pre>
+    <h1 style="padding: 0px;">Heading 1</h1><h2>Heading 2</h2>
+	<h3>Heading 3</h3><h4>Heading 4</h4>
+	<h5>Heading 5</h5><h6>Heading 6</h6>
     </pre>
 
-    <table border="1" style="border-collapse: collapse; border-color: white;">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h2>Creations on my Ko-fi</h2>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>
-                    <h3>Twitch Panels</h3>
-                </th>
-                <td>
-                    <h3>Mocha Swirl.exe</h3>
-                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100">
-                </td>
-                <td>
-                    <h3>Strawberry Lemonade</h3>
-                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100">
-                </td>
-                <td>
-                    <h3>Pastel Cloud</h3>
-                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <h3>Stream Overlays</h3>
-                </th>
-                <td>X</td>
-                <td>
-                    <h3>Strawberry Lemonade</h3>
-                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100">
-                </td>
-                <td>
-                    <h3>Pastel Cloud</h3>
-                    <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100">
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table><br><br>
+        <table border="1" style="border-collapse: collapse; border-color: white;">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        <h2>Creations on my Ko-fi</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <h3>Twitch Panels</h3>
+                    </th>
+                    <td>
+                        <h3>Mocha Swirl.exe</h3>
+                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100">
+                    </td>
+                    <td>
+                        <h3>Strawberry Lemonade</h3>
+                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100">
+                    </td>
+                    <td>
+                        <h3>Pastel Cloud</h3>
+                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>Stream Overlays</h3>
+                    </th>
+                    <td>X</td>
+                    <td>
+                        <h3>Strawberry Lemonade</h3>
+                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100">
+                    </td>
+                    <td>
+                        <h3>Pastel Cloud</h3>
+                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table><br><br>
 
-    <!------- GOALS -------->
+        <!------- GOALS -------->
 
-    <!------ CONTACT ------->
+        <!------ CONTACT ------->
 
-    <fieldset>
-        <legend>
-            <h3>Post A Review</h3>
-        </legend>
-        <form method="post" enctype="application/x-www-form-urlencoded">
-            <label for="name">Name:</label>
-            <input type="text" name="name"><br><br>
-            <label for="review">Review:</label>
-            <div class="rating">
-                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
-            </div>
-            <textarea name="message" id="message" cols="30" rows="4"></textarea><br>
-            <button type="submit">Post</button>
-        </form>
-    </fieldset><br><br><br>
+        <fieldset>
+            <legend>
+                <h3>Post A Review</h3>
+            </legend>
+            <form method="post" enctype="application/x-www-form-urlencoded" action="https://github.com/annaesmie/annaesmie/blob/main/Portfolio">
+                <label for="name">Name:</label>
+                <input type="text" name="name"><br><br>
+                <label for="review">Review:</label>
+                <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
+                </div>
+                <textarea name="message" id="message" cols="30" rows="4"></textarea><br>
+                <button type="submit">Post</button>
+            </form>
+        </fieldset><br><br><br>
 
 
-    <fieldset>
-        <legend>
-            <h3>Log In to Submit a Commission</h3>
-        </legend>
-        <form action="/login">
-            <label for="username">Username:</label>
-            <input type="text" name="username">
-            <br><br>
+        <fieldset>
+            <legend>
+                <h3>Log In to Submit a Commission</h3>
+            </legend>
+            <form action="/login">
+                <label for="username">Username:</label>
+                <input type="text" name="username">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="question">
+                <br><br>
+                <button type="submit">Log In</button>
+            </form>
+        </fieldset><br><br><br>
+
+
+        <h3>Here's a copy my Résumé ?</h3>
+        <form method="get">
             <label for="email">Email:</label>
-            <input type="email" name="email">
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" name="question">
-            <br><br>
-            <button type="submit">Log In</button>
+            <input type="email">
+            <button type="submit">Thank You</button>
         </form>
-    </fieldset><br><br><br>
-
-
-    <h3>Here's a copy my Résumé ?</h3>
-    <form method="get">
-        <label for="email">Email:</label>
-        <input type="email">
-        <button type="submit">Thank You</button>
-    </form>
-
+    </main>
 
     <!--Footer-->
     <br><br><br>
