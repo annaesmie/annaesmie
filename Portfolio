@@ -19,6 +19,10 @@
     <meta name="author" content="Deondra Brown">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         #s-m-t-tooltip {
             max-width: 240px;
             padding: 3px 10px;
@@ -52,28 +56,48 @@
             font-family: 'Cinzel';
             color: #4682b4;
             font-size: 12px;
-            width: 100%;
-            height: 100%;
             margin: 20;
             padding: 0;
             left: 0;
             top: 0;
             background-color: #333;
             letter-spacing: 0.25px;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
             font-smooth: antialiased;
         }
 
-        aside {
-            display: flex;
-            float: left;
+        header {
+            padding: 10px;
+            background: darkgrey;
+            font-size: 15px;
+            color: white;
+            border-top: solid;
+            border-left: solid;
+            border-right: solid;
+            border-bottom: solid steelblue;
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            float: right;
+        aside {
+            float: left;
+            background: grey;
+            width: 25%;
+            height: 500px;
+            padding: 20px;
+            border: solid;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+      		width: 75%;
+            border: solid;
+            background: #334;
+        }
+
+        footer {
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            color: white;
         }
 
         .socials {
@@ -82,13 +106,14 @@
         }
 
         hr {
-            border-top: 5px dotted white;
-            border-left: 5px dotted white;
+            border-top: 5px solid white;
+            border-left: 5px solid white;
             border-right: 0px;
             border-bottom: 0px;
             margin-top: 0px;
             margin-bottom: 10px;
             padding: 0px;
+            background: grey;
         }
 
         u {
@@ -109,10 +134,11 @@
         }
 
         button {
-            border: 1px solid #fff;
+            border: 2px solid #fff;
             display: inline;
             padding: 5px;
             background: steelblue;
+            color: white;
             border-radius: 10px;
             font-family: "Raleway";
             cursor: pointer;
@@ -197,6 +223,14 @@
             transition: .5s;
         }
 
+        }
+
+        .body::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         ::-webkit-scrollbar {
             height: 12px;
             width: 12px;
@@ -204,7 +238,7 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: steelblue;
+            background: #334;
         }
 
         ::-webkit-scrollbar-track {
@@ -213,7 +247,7 @@
 
         ::-webkit-scrollbar-thumb,
         ::-webkit-scrollbar-track {
-            border: 3px solid #fff;
+            border: 3px solid #334;
             border-radius: 5px;
         }
     </style>
@@ -223,303 +257,373 @@
 
 <body>
 
-    <header>
+    <!-------- HEADER -------->
+    <section class="header">
+        <header>
 
-        <!-------- NAME -------->
-        <h1 style="padding-left: 0px; line-height: 0px; margin-bottom: 8px; font-family: Raleway; color: white;">Deondra Brown<sup><small>19</small></sup></h1>
-        <h3 style="color: white;line-height: 0px; margin-top: 5px; font-family: Raleway"><mark><small>FULLSTACK DEV</small></mark></h3>
+            <!-------- INTRO -------->
+            <section class="intro">
+                <h1 style="padding-left: 0px;  line-height: 0px; margin-bottom: 10px; font-family: Raleway; color: white;">Deondra Brown<sup><small>19</small></sup></h1>
+                <h3 style="color: white;line-height: 0px; margin-top: 15px; font-family: Raleway"><mark><small>FULLSTACK DEV</small></mark></h3>
+                <img src="" alt="that's me">
 
-        <style>
-            mark {
-                background-color: #67ebfa;
-                color: #ffff;
-            }
-        </style>
+                <style>
+                    mark {
+                        background-color: #67ebfa;
+                        color: #ffff;
+                    }
+                </style>
+            </section>
+            <!-------- END OF INTRO -------->
 
+            <!------- ADDITIONAL INFO -------->
+            <section class="add-info">
+                <br>
+                <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>
+                    I 'm still learning how to code and this <i class="th-folder-1-o"></i> is my portfolio.<br>
+                    Enjoy your <strong>STAY </strong>;}</p>
 
-        <!------- INTRO -------->
-        <br>
-        <p style="border: 1px solid white">Hey! I' m a 19 year old university <strong> DROPOUT </strong> ... x2. <br>
-            I 'm still learning how to code and this <i class="th-folder-1-o"></i> is my portfolio.<br>
-            Enjoy your <strong>STAY </strong>;}</p>
+                <br><br>
 
-        <br><br>
-        <hr>
+                <style>
+                    p {
+                        width: fit-content;
+                        padding: 10px;
+                        margin: 0px;
+                    }
+                </style>
+            </section>
+            <!-------- END OF ADDITIONAL INFO -------->
 
-        <style>
-            p {
-                width: fit-content;
-                padding: 10px;
-                margin: 0px;
-            }
-        </style>
-
-
-        <!----- NAVIGATION ------->
-        <aside>
-            <hr>
-            <nav>
-                <ul>
-                    <li><a href="">
-                            <h1 style="border: 1px solid white">annaesmie</h1>
-                        </a>
-                    </li>
-
-                    <li>
-                        <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
-                            <input type="search" name="location" placeholder="Search..">
-                            <button type="submit"><i class="th-search-o"></i></button>
-                            &nbsp;&nbsp;
-                        </form>
-                    </li>
-
-                    <style>
-                        ul {
-                            list-style-type: none;
-                            margin: 0px;
-                            padding: 0px;
-                        }
-
-                        h1 {
-                            width: fit-content;
-                            padding: 10px
-                        }
-                    </style>
-
-                </ul>
-            </nav><br>
-            <hr>
-        </aside>
-    </header>
+        </header>
+        <!----- END OF HEADER ------->
+    </section>
 
 
-
-    <!------ SOCIALS ------->
     <main>
+        <section class="body">
+            <!----- NAVIGATION ------->
+            <section class="nav">
+                <aside>
 
-        <br>
-        <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
-        <h2 style="line-height: 0px;">You Can Find Me Here:</h2>
-        <br><br>
-        <section class="socials">
-          
-          <dl>
+                    <nav>
+                        <button class="nav-toggle" aria-label="show/hide navigation">
+                            <span class="hamburger"></span>
+                        </button>
+                        <ul class="navigation">
+                            <li><a href="">
+                                    <h1 style="border: 1px solid white">annaesmie</h1>
+                                </a>
+                            </li>
+
+                            <li>
+                                <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
+                                    <input type="search" name="location" placeholder="Search..">
+                                    <button type="submit"><i class="th-search-o"></i></button>
+                                    &nbsp;&nbsp;
+                                </form>
+                            </li>
+
+                            <style>
+                                ul {
+                                    list-style-type: none;
+                                    margin: 0px;
+                                    padding: 0px;
+                                }
+
+                                h1 {
+                                    width: fit-content;
+                                    padding: 10px
+                                }
+                            </style>
+
+                        </ul>
+                    </nav><br>
+                </aside>
+            </section>
+            <!----- END OF NAVIGATION ------->
+
+
+
+
+<article>
+            <!------ SOCIALS ------->
+            <br>
+            <section class="my-socials">
+
+                <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
+                <h2 style="line-height: 0px;">You Can Find Me Here:</h2>
+                <br><br>
+
+                <div class="socials">
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+                        <a href="https://www.intstagram.com/@deon.x.dra">
+                            <h4>deon.x.dra</h4>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">YouTube &nbsp;<i class="th-instagram-o"></i></h3>
+                        <a href="https://www.youtube.com/@annaesmie">
+                            <h4>annaesmie</h4>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">TikTok &nbsp;<i class="th-instagram-o"></i></h3>
+                        <a href="https://www.tiktok.com/@anna03.exe">
+                            <h4>anna03.exe</h4>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="socials">
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">Twitter &nbsp;<i class="th-twitter-o"></i></h3>
+                        <a href="https://www.twitter.com/annaesmie">
+                            <h4>annaesmie</h4>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">Alt Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+                        <a href="https://www.intstagram.com/@annaesmie">
+                            <h4>annaesmie</h4>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <h3 style="padding: 0px; margin: 0px;">Github &nbsp;<i class="th-instagram-o"></i></h3>
+                        <a href="https://www.intstagram.com/@deon.x.dra">
+                            <h4>annaesmie</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <style>
+                    .link {
+                        text-align: center;
+                        display: list-item;
+                        list-style-type: "♡";
+                        padding-inline-start: 3px;
+                        font-family: 'Raleway';
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        margin-left: 25px;
+                        margin-right: 25px;
+                        line-height: 1px width:100%;
+                        color: steelblue;
+                    }
+                </style>
+            </section>
+            <!------ END OF SOCIALS ------->
+
+
+            <!------ ABOUT ME ------>
+            <br>
+            <section class="about-me">
+                <h1></h1>
+                <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
+                <style>
+                    span {
+                        padding: 5px;
+                        margin: 0px;
+                    }
+                </style>
 
                 <dt>
-                    <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
+                    <h4>What games do you play?</h4>
                 </dt>
-                <dd><a href="https://www.intstagram.com/@deon.x.dra">
-                        <h4>deon.x.dra</h4>
-                    </a>
-                </dd>
-<br>
-                <dt>
-                    <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
-                </dt>
-                <dd><a href="https://www.intstagram.com/@deon.x.dra">
-                        <h4>deon.x.dra</h4>
-                    </a>
-                </dd>
-  
-  </dl>
+                <dd>Genshin Impact</dd>
+                <dd>Sims 4</dd>
+                <style>
+                    dt {
+                        font-family: 'Raleway';
+                        padding: 0px;
+                        margin: 0px;
+                        line-height: 0px;
+                        width: 50%;
+                    }
 
-            <style>
-             	dl{
-              		display: flex;
-                    padding: 5px;
-                    margin: 10px;
-              		width: 150px;
-              }
-              
-                dt {
-                    display: list-item;
-                    list-style-type: none;
-                    font-family: 'Raleway';
-                    padding: 0px;
-                    margin: 0px;
-                    line-height: 0px
-              		width: 0px;
-                }
-
-                dd {
-                    display: list-item;
-                    list-style-type: "♡";
-                    padding-inline-start: 1px;
-                    margin-left: 10px;
-                    line-height: 1.5;
-              		width:150px;
-                    color: white;
-                }
-            </style>
-        </section>
+                    dd {
+                        display: list-item;
+                        list-style-type: "♡";
+                        padding-inline-start: 1px;
+                        margin-left: 10px;
+                        line-height: 1.5;
+                        width: 150px;
+                        color: white;
+                    }
+                </style>
+            </section>
+            <!------ END OF ABOUT ME ------->
 
 
-        <!------ ABOUT ME ------>
-        <br>
-        <h1></h1>
-        <h2><span style="border: 1px solid white">Q/A</span> About Me</h2><br>
-        <style>
-            span {
-                padding: 5px;
-                margin: 0px;
-            }
-        </style>
+            <!------ Submit Q&A ------->
+            <br><br>
+            <section class="submit-ask">
+                <fieldset>
+                    <legend style="margin: 0px;">
+                        <h3>Submit a Question</h3>
+                    </legend>
+                    <form><label for="name">Name:</label><input type="text" name="name"><br><br><label for="sex">Sex:</label><input type="radio" name="sex" id="male" value="male"><label for="male">Male</label><input type="radio" name="sex" id="female" value="female"><label for="female">Female</label><input type="radio" name="sex" id="other" value="other"><label for="other">Other</label><br><br><label for="continent">Continent:</label><select name="continent" id="continent">
+                            <option>Select an option</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="north america">North America</option>
+                            <option value="south america">South America</option>
+                            <option value="europe">Europe</option>
+                            <option value="australia">Australia</option>
+                            <option value="caribbean">Caribbean</option>
+                            <option value="pacific islands">Pacific Islands</option>
+                        </select><br><br><label for="message">Message:</label><br><textarea name="message" id="message" cols="30" rows="4"></textarea><br><br><input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br><button type="submit">Submit</button></form>
+                </fieldset>
+                <style>
+                    fieldset {
+                        width: fit-content;
+                        padding: 20px;
+                    }
+                </style>
+            </section>
+            <!------ END OF SUBMIT Q&A ------->
 
-        <dl>
-          <dt>
-            <h4>What games do you play?</h4>
-          </dt>
-            <dd>Genshin Impact</dd>
-            <dd>Sims 4</dd>
-        </dl>
-
-
-        <!------ Submit Q&A ------->
-        <br><br>
-        <fieldset>
-            <legend style="margin: 0px;">
-                <h3>Submit a Question</h3>
-            </legend>
-            <form><label for="name">Name:</label><input type="text" name="name"><br><br><label for="sex">Sex:</label><input type="radio" name="sex" id="male" value="male"><label for="male">Male</label><input type="radio" name="sex" id="female" value="female"><label for="female">Female</label><input type="radio" name="sex" id="other" value="other"><label for="other">Other</label><br><br><label for="continent">Continent:</label><select name="continent" id="continent">
-                    <option>Select an option</option>
-                    <option value="asia">Asia</option>
-                    <option value="africa">Africa</option>
-                    <option value="north america">North America</option>
-                    <option value="south america">South America</option>
-                    <option value="europe">Europe</option>
-                    <option value="australia">Australia</option>
-                    <option value="caribbean">Caribbean</option>
-                    <option value="pacific islands">Pacific Islands</option>
-                </select><br><br><label for="message">Message:</label><br><textarea name="message" id="message" cols="30" rows="4"></textarea><br><br><input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Do you want to subscribe to the newsletter?</label><br><br><button type="submit">Submit</button></form>
-        </fieldset>
-        <style>
-            fieldset {
-                width: fit-content;
-                padding: 20px;
-            }
-        </style>
-
-        <!------ MY WORK ------->
-        <br>
-        <h1></h1>
-        <h2>Here' s My Work </h2>
-        <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
+            <!------ MY WORK ------->
+            <br>
+            <section class="my-work">
+                <h1></h1>
+                <h2>Here' s My Work </h2>
+                <p style="border: 1px solid white"> Im just going to show you that ik the basics here. <br><i><del>It 's really just a reminder to myself</del></i></p>
 
 
-        <pre>
+                <pre>
     <h1 style="padding: 0px;">Heading 1</h1><h2>Heading 2</h2>
 	<h3>Heading 3</h3><h4>Heading 4</h4>
 	<h5>Heading 5</h5><h6>Heading 6</h6>
     </pre>
 
-        <table border="1" style="border-collapse: collapse; border-color: white;">
-            <thead>
-                <tr>
-                    <th colspan="4">
-                        <h2>Creations on my Ko-fi</h2>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>
-                        <h3>Twitch Panels</h3>
-                    </th>
-                    <td>
-                        <h3>Mocha Swirl.exe</h3>
-                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100">
-                    </td>
-                    <td>
-                        <h3>Strawberry Lemonade</h3>
-                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100">
-                    </td>
-                    <td>
-                        <h3>Pastel Cloud</h3>
-                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100">
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <h3>Stream Overlays</h3>
-                    </th>
-                    <td>X</td>
-                    <td>
-                        <h3>Strawberry Lemonade</h3>
-                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100">
-                    </td>
-                    <td>
-                        <h3>Pastel Cloud</h3>
-                        <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100">
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table><br><br>
-
-        <!------- GOALS -------->
-
-        <!------ CONTACT ------->
-
-        <fieldset>
-            <legend>
-                <h3>Post A Review</h3>
-            </legend>
-            <form method="post" enctype="application/x-www-form-urlencoded" action="https://github.com/annaesmie/annaesmie/blob/main/Portfolio">
-                <label for="name">Name:</label>
-                <input type="text" name="name"><br><br>
-                <label for="review">Review:</label>
-                <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
-                </div>
-                <textarea name="message" id="message" cols="30" rows="4"></textarea><br>
-                <button type="submit">Post</button>
-            </form>
-        </fieldset><br><br><br>
+                <table border="1" style="border-collapse: collapse; border-color: white;">
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h2>Creations on my Ko-fi</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <h3>Twitch Panels</h3>
+                            </th>
+                            <td>
+                                <h3>Mocha Swirl.exe</h3>
+                                <img src="https://storage.ko-fi.com/cdn/useruploads/display/2c2963fd-83df-415e-ba45-8a8dde0ffb29_screenshot2023-04-21150152a.png" width="200" height="100">
+                            </td>
+                            <td>
+                                <h3>Strawberry Lemonade</h3>
+                                <img src="https://storage.ko-fi.com/cdn/useruploads/display/63887686-28c0-4ae0-bd5f-3ed76d87ced2_screenshot2023-04-23180522h.png" width="200" height="100">
+                            </td>
+                            <td>
+                                <h3>Pastel Cloud</h3>
+                                <img src="https://storage.ko-fi.com/cdn/useruploads/display/deefbad1-99f5-4fc3-8ce4-d44b723e0a5b_screenshot2023-04-21162019m.png" width="200" height="100">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <h3>Stream Overlays</h3>
+                            </th>
+                            <td>X</td>
+                            <td>
+                                <h3>Strawberry Lemonade</h3>
+                                <img src="https://storage.ko-fi.com/cdn/useruploads/display/bafd0829-c758-4ef4-adca-5a628a696628_1.png" width="200" height="100">
+                            </td>
+                            <td>
+                                <h3>Pastel Cloud</h3>
+                                <img src="https://storage.ko-fi.com/cdn/useruploads/display/a3804f13-3f62-4d82-93a6-47d8f85ee449_screenshot2023-04-21180414.png" width="200" height="100">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table><br><br>
 
 
-        <fieldset>
-            <legend>
-                <h3>Log In to Submit a Commission</h3>
-            </legend>
-            <form action="/login">
-                <label for="username">Username:</label>
-                <input type="text" name="username">
-                <br><br>
+
+
+                <fieldset>
+                    <legend>
+                        <h3>Post A Review</h3>
+                    </legend>
+                    <form method="post" enctype="application/x-www-form-urlencoded" action="https://github.com/annaesmie/annaesmie/blob/main/Portfolio">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name"><br><br>
+                        <label for="review">Review:</label>
+                        <div class="rating">
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label><br>
+                        </div>
+                        <textarea name="message" id="message" cols="30" rows="4"></textarea><br>
+                        <button type="submit">Post</button>
+                    </form>
+                </fieldset><br><br><br>
+
+
+                <fieldset>
+                    <legend>
+                        <h3>Log In to Submit a Commission</h3>
+                    </legend>
+                    <form action="/login">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username">
+                        <br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                        <br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="question">
+                        <br><br>
+                        <button type="submit">Log In</button>
+                    </form>
+                </fieldset><br><br><br>
+            </section>
+            <!------ END OF MY WORK------->
+
+            <!------- GOALS -------->
+
+            <!------ END OF GOALS------->
+
+            <!------ CONTACT ------->
+
+            <h3>Here's a copy my Résumé ?</h3>
+            <form method="get">
                 <label for="email">Email:</label>
-                <input type="email" name="email">
-                <br><br>
-                <label for="password">Password:</label>
-                <input type="password" name="question">
-                <br><br>
-                <button type="submit">Log In</button>
+                <input type="email">
+                <button type="submit">Thank You</button>
             </form>
-        </fieldset><br><br><br>
+            <!------ END OF CONTACT ------->
 
 
-        <h3>Here's a copy my Résumé ?</h3>
-        <form method="get">
-            <label for="email">Email:</label>
-            <input type="email">
-            <button type="submit">Thank You</button>
-        </form>
+        </section>
+        <details>
+            <summary>Click me</summary>
+            <p>Hidden content</p>
+        </details>
+                          </article>
     </main>
 
     <!--Footer-->
-    <br><br><br>
-    <footer>
-        <a href="mailto:anna03exe@gmail.com">Business Email: anna03exe@gmail.com<br>For promotions and collaborations</a>
+    <section class="footer">
+        <footer>
+            <a href="mailto:anna03exe@gmail.com">Business Email: anna03exe@gmail.com<br>For promotions and collaborations</a>
 
 
-        <!------ LEAVE CREDIT IN TACT ------------>
-        <div class="taezs"><a href="https://taezs.tumblr.com"><span class="th th-paperclip"></span></a></div>
-        <!------ LEAVE CREDIT IN TACT ------------>
-    </footer>
+            <!------ LEAVE CREDIT IN TACT ------------>
+            <div class="taezs"><a href="https://taezs.tumblr.com"><span class="th th-paperclip"></span></a></div>
+            <!------ LEAVE CREDIT IN TACT ------------>
+        </footer>
+    </section>
+    <!------ END OF FOOTER ------->
 
 </body>
+<!------------------------ END OF BODY ------------------------>
 
 </html>
