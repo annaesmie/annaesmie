@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
-
+    <link href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
     <!-- browser page title ---->
     <title>annaesmie</title>
 
@@ -320,7 +320,6 @@
                                 <form method="get" action="https://github.com/annaesmie/annaesmie/tree/main">
                                     <input type="search" name="location" placeholder="Search..">
                                     <button type="submit"><i class="th-search-o"></i></button>
-                                    &nbsp;&nbsp;
                                 </form>
                             </li>
 
@@ -354,62 +353,67 @@
                 <h1 style="padding: 0px; margin: 0px;"><u>SOCIALS</u></h1>
                 <h2 style="line-height: 0px;">You Can Find Me Here:</h2>
                 <br><br>
-
+                  
                 <div class="socials">
                     <div class="link">
                         <h3 style="padding: 0px; margin: 0px;">Instagram &nbsp;<i class="th-instagram-o"></i></h3>
-                        <a href="https://www.intstagram.com/@deon.x.dra">
+                        <div class="username"><a href="https://www.intstagram.com/@deon.x.dra">
                             <h4>deon.x.dra</h4>
-                        </a>
+                              </a></div>
                     </div>
                     <div class="link">
-                        <h3 style="padding: 0px; margin: 0px;">YouTube &nbsp;<i class="th-instagram-o"></i></h3>
-                        <a href="https://www.youtube.com/@annaesmie">
+                        <h3 style="padding: 0px; margin: 0px;">YouTube &nbsp;<i class="th-youtube-o"></i></h3>
+                        <div class="username"><a href="https://www.youtube.com/@annaesmie">
                             <h4>annaesmie</h4>
-                        </a>
+                        </a></div>
                     </div>
                     <div class="link">
-                        <h3 style="padding: 0px; margin: 0px;">TikTok &nbsp;<i class="th-instagram-o"></i></h3>
-                        <a href="https://www.tiktok.com/@anna03.exe">
+                        <h3 style="padding: 0px; margin: 0px;">TikTok &nbsp;<i class="fa-brands fa-tiktok"></i></h3>
+                        <div class="username"><a href="https://www.tiktok.com/@anna03.exe">
                             <h4>anna03.exe</h4>
-                        </a>
+                              </a></div>
                     </div>
                 </div>
                 <br>
                 <div class="socials">
                     <div class="link">
                         <h3 style="padding: 0px; margin: 0px;">Twitter &nbsp;<i class="th-twitter-o"></i></h3>
-                        <a href="https://www.twitter.com/annaesmie">
+                        <div class="username"><a href="https://www.twitter.com/annaesmie">
                             <h4>annaesmie</h4>
-                        </a>
+                        </a></div>
                     </div>
                     <div class="link">
                         <h3 style="padding: 0px; margin: 0px;">Alt Instagram &nbsp;<i class="th-instagram-o"></i></h3>
-                        <a href="https://www.intstagram.com/@annaesmie">
+                        <div class="username"><a href="https://www.intstagram.com/@annaesmie">
                             <h4>annaesmie</h4>
-                        </a>
+                        </a></div>
                     </div>
                     <div class="link">
-                        <h3 style="padding: 0px; margin: 0px;">Github &nbsp;<i class="th-instagram-o"></i></h3>
-                        <a href="https://www.intstagram.com/@deon.x.dra">
+                        <h3 style="padding: 0px; margin: 0px;">Github &nbsp;<i class="th-github"></i></h3>
+                        <div class="username"><a href="https://www.intstagram.com/@deon.x.dra">
                             <h4>annaesmie</h4>
-                        </a>
+                          </a></div>
                     </div>
                 </div>
 
                 <style>
                     .link {
-                        text-align: center;
+                        text-align: left;
+                        font-family: 'Raleway';
+                        color: steelblue;
+                  		margin-left: 0px;
+                  		margin-right: 0px;
+                    }
+                  
+                  	.username {
                         display: list-item;
                         list-style-type: "♡";
-                        padding-inline-start: 3px;
-                        font-family: 'Raleway';
-                        padding-left: 25px;
-                        padding-right: 25px;
-                        margin-left: 25px;
-                        margin-right: 25px;
-                        line-height: 1px width:100%;
-                        color: steelblue;
+                        font-family: 'Cinzel';
+                        color: white;
+                  		margin-left: 100%;
+                  		margin-right: 100%;
+                        padding-bottom: 10px;
+                        line-height: 10px;
                     }
                 </style>
             </section>
@@ -587,9 +591,9 @@
             </section>
             <!------ END OF MY WORK------->
 
-            <!------- GOALS -------->
+            <!------- PROJECTS -------->
 
-            <!------ END OF GOALS------->
+            <!------ END OF PROJECTS------->
 
             <!------ CONTACT ------->
 
